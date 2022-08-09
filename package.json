@@ -1,0 +1,81 @@
+{
+  "name": "sophia",
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "test": "ng test",
+    "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix",
+    "e2e": "ng e2e"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged --relative"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{ts,html}": [
+      "eslint --fix"
+    ]
+  },
+  "private": true,
+  "dependencies": {
+    "@angular-devkit/schematics": "^14.1.1",
+    "@angular/animations": "^14.1.1",
+    "@angular/cdk": "^14.1.1",
+    "@angular/common": "^14.1.1",
+    "@angular/compiler": "^14.1.1",
+    "@angular/core": "^14.1.1",
+    "@angular/flex-layout": "^14.0.0-beta.40",
+    "@angular/forms": "^14.1.1",
+    "@angular/localize": "^14.1.1",
+    "@angular/material": "^14.1.1",
+    "@angular/platform-browser": "^14.1.1",
+    "@angular/platform-browser-dynamic": "^14.1.1",
+    "@angular/platform-server": "^14.1.1",
+    "@angular/router": "^14.1.1",
+    "angular-font-awesome": "^3.1.2",
+    "core-js": "^2.6.12",
+    "font-awesome": "^4.7.0",
+    "ngx-image-zoom": "^1.0.1",
+    "ngx-img-zoom": "^4.1.2",
+    "ngx-pagination": "^6.0.2",
+    "ngx-spinner": "^14.0.0",
+    "rxjs": "^6.5.5",
+    "swiper": "^8.3.2",
+    "tslib": "^2.4.0",
+    "zone.js": "^0.11.5"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^14.1.1",
+    "@angular-eslint/builder": "14.0.2",
+    "@angular-eslint/eslint-plugin": "14.0.2",
+    "@angular-eslint/eslint-plugin-template": "14.0.2",
+    "@angular-eslint/schematics": "14.0.2",
+    "@angular-eslint/template-parser": "14.0.2",
+    "@angular/cli": "^14.1.1",
+    "@angular/compiler-cli": "^14.1.1",
+    "@angular/language-service": "^14.1.1",
+    "@types/jasmine": "^3.7.4",
+    "@types/jasminewd2": "^2.0.9",
+    "@types/node": "^13.13.52",
+    "@typescript-eslint/eslint-plugin": "5.29.0",
+    "@typescript-eslint/parser": "5.29.0",
+    "eslint": "^8.18.0",
+    "husky": "^8.0.1",
+    "jasmine-core": "^4.3.0",
+    "jasmine-spec-reporter": "^7.0.0",
+    "karma": "~6.3.19",
+    "karma-chrome-launcher": "~3.1.0",
+    "karma-cli": "^2.0.0",
+    "karma-coverage-istanbul-reporter": "~3.0.2",
+    "karma-jasmine": "~4.0.0",
+    "karma-jasmine-html-reporter": "^1.5.0",
+    "lint-staged": "^13.0.3",
+    "protractor": "~7.0.0",
+    "ts-node": "~7.0.0",
+    "typescript": "^4.6.4",
+    "webpack": "^4.46.0"
+  }
+}

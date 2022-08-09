@@ -1,0 +1,41 @@
+<div class="main-slider">
+    <swiper class="swiper h-100" [config]="config" [navigation]="true" [pagination]="pagination" [autoplay]="autoplay" [loop]="true" [lazy]="true">
+        <!-- <div class="swiper-wrapper h-100">
+             <div *ngFor="let slide of slides" class="swiper-slide">
+                <div [attr.data-background]="slide.image" class="slide-item swiper-lazy">
+                    <div class="container sl-wrap">
+                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                        <div fxLayout="column" fxLayoutAlign="center left" class="content">
+                            <h1>{{slide.title}}</h1>
+                            <h3>{{slide.subtitle}}</h3>
+                            <button mat-raised-button color="primary">Shop now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+
+        <ng-template *ngFor="let slide of slides" swiperSlide>
+                <div class="swiper-wrapper h-100">
+                    <div class="slide-item swiper-lazy" style="background-image: url({{slide.image}}); width: 100%;">
+                        <div class="container sl-wrap">
+                            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                            <div fxLayout="column" fxLayoutAlign="center left" class="content">
+                                <h1>{{slide.title}}</h1>
+                                <h3>{{slide.subtitle}}</h3>
+                                <button mat-raised-button color="primary">Shop now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </ng-template>
+
+        <div class="swiper-pagination white"></div>
+        <button mat-mini-fab color="primary" class="swiper-button-prev swipe-arrow">
+            <mat-icon>keyboard_arrow_left</mat-icon>
+        </button>
+        <button mat-mini-fab color="primary" class="swiper-button-next swipe-arrow">
+            <mat-icon>keyboard_arrow_right</mat-icon>
+        </button>
+    </swiper>
+</div>
