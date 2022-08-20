@@ -1,78 +1,93 @@
 <footer class="footer sec-padding">
-  <div class="container">
-      <div class="footer-wrapper" fxLayout="row wrap" fxLayoutAlign="space-between start">
-        <div fxFlex="100" fxFlex.gt-sm="30" fxFlex.sm="50" class="footer-widget about-widget"><a class="logo" href="index.html"><img src="assets//images/logo-02-01.png" alt="Awesome Image"></a>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean malesuada fringilla sem, at dictum lectus ultricies quis. Etiam eu bibendum orci. Aliquam erat volutpat.</p>
-          <div class="link"><a href="#">MORE ABOUT US</a> </div>
-        </div>
+    <div class="container">
+        <div class="footer-widget" fxLayout="row wrap" fxLayoutAlign="space-between start">
+            <div class="about-widget" fxFlex="100" fxFlex.gt-sm="30" fxFlex.sm="50">
+                <a class="logo" routerLink="/home">
+                    <img src="assets/images/logo/logotipo_negro.png" width="250" alt="AES LOGO">
+                </a>
 
-          <div fxFlex="100" fxFlex.gt-sm="23" fxFlex.sm="50" ngClass.xs="mt-2" class="footer-widget links-widget links-widget-pac">
-            <div class="title">
-              <h5>Services</h5>
+                <p>
+                    ATHENDAT E-COMMERCE SOLUTION es una plataforma de comercio electrónico lista para que usted pueda
+                    vender sus productos y cobrar por estos de manera automatizadas por pasarelas de pago cubanas e
+                    internacionales.
+                </p>
+                <div class="link">
+                    <a href="#">Conocer más...</a>
+                </div>
             </div>
-            <div class="row">
-                <ul>
-                  <li><a href="#">Hotel Growth</a></li>
-                  <li><a href="#">Hotel Loan</a></li>
-                  <li><a href="#">Financial Planning</a></li>
-                  <li><a href="#">Insurance Consulting</a></li>
-                  <li><a href="#">Retirenment Planing</a></li>
-                  <li><a href="#">Tax Planing</a></li>
+
+            <div class="links-widget links-widget-pac" fxFlex="100" fxFlex.gt-sm="23" fxFlex.sm="50"
+                ngClass.xs="mt-2">
+
+                <div class="title">
+                    <h5>Funcionalidades</h5>
+                </div>
+
+                <div class="row">
+                    <ul>
+                        <li><a href="#">Gestión de Productos</a></li>
+                        <li><a href="#">Valoración de Productos</a></li>
+                        <li><a href="#">Gestión de Anuncios</a></li>
+                        <li><a href="#">Pagos Automatizados</a></li>
+                        <li><a href="#">Seguimiento de Órdenes</a></li>
+                        <li><a href="#">Una sola compra, varios Vendedores</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div fxFlex="100" fxFlex.gt-sm="23" fxFlex.sm="50" ngClass.xs="mt-2" class="subscribe-widget">
+                <div class="title">
+                    <h5>Actualizaciones</h5>
+                </div>
+
+                <form action="#">
+                    <p>¿Desea estar al tanto?</p>
+                    <div fxLayout="column" class="newsletter-widget">
+                        <input type="text" placeholder="Solo envíenos su correo">
+                        <button type="submit" class="ped-btn-footer">SUSCRIBIRME</button>
+                    </div>
+                </form>
+            </div>
+
+
+            <div fxFlex="100" fxFlex.gt-sm="23" fxFlex.sm="50" ngClass.sm="mt-2" ngClass.xs="mt-2"
+                class="subscribe-widget">
+                <div class="title">
+                    <h5>Contáctenos</h5>
+                </div>
+                <div fxLayout="row" class="tel-box">
+                    <div class="icon"><i class="fa fa-map-marker"></i></div>
+                    <div class="text">
+                        <p>La Sola 307 entre Santa Catalina y Milagros, municipio Diez de Octubre, CP 10700, provincia La Habana, República de Cuba</p>
+                    </div>
+                </div>
+                <div fxLayout="row" class="tel-box">
+                    <div class="icon"><i class="fa fa-phone"></i></div>
+                    <div class="text">
+                        <p>+535 254 1322</p>
+                    </div>
+                </div>
+                <div fxLayout="row" class="tel-box">
+                    <div class="icon"><i class="fa fa-envelope"></i></div>
+                    <div class="text">
+                        <p><a href="mailto:athendat@athendat.site">athendat@athendat.site</a></p>
+                    </div>
+                </div>
+
+                <ul fxLayout="row" class="social list-inline">
+                    <li fxLayout="row" fxLayoutAlign="center center"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li fxLayout="row" fxLayoutAlign="center center"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    <li fxLayout="row" fxLayoutAlign="center center"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li fxLayout="row" fxLayoutAlign="center center"><a href="#"><i class="fa fa-google-plus"></i></a></li>
                 </ul>
             </div>
-          </div>
 
 
-        <div fxFlex="100" fxFlex.gt-sm="23" fxFlex.sm="50" ngClass.xs="mt-2" class="footer-widget subscribe-widget">
-          <div class="title">
-            <h5>Subscribe Newsletter</h5>
-          </div>
-          <form action="#">
-            <p>Get latest updates and offers.</p>
-            <div fxLayout="column" class="newsletter-widget">
-              <input type="text" placeholder="Enter your email address">
-              <button type="submit" class="ped-btn-footer">SUBSCRIBE US</button>
-            </div>
-          </form>
+
+
+
+
         </div>
-
-
-          <div fxFlex="100" fxFlex.gt-sm="23" fxFlex.sm="50" ngClass.sm="mt-2" ngClass.xs="mt-2" class="footer-widget subscribe-widget">
-            <div class="title">
-              <h5>Contact Us</h5>
-            </div>
-            <div fxLayout="row" class="tel-box">
-              <div class="icon"><i class="fa fa-map-marker"></i></div>
-              <div class="text">
-                <p>Apple St, New York, NY 10012, USA</p>
-              </div>
-            </div>
-            <div fxLayout="row" class="tel-box">
-              <div class="icon"><i class="fa fa-phone"></i></div>
-              <div class="text">
-                <p>( 018) 65 524 8503  /  (125) 954 7854</p>
-              </div>
-            </div>
-            <div fxLayout="row" class="tel-box">
-              <div class="icon"><i class="fa fa-envelope"></i></div>
-              <div class="text">
-                <p><a href="#">contact@lamarena.com</a></p>
-              </div>
-            </div>
-
-            <ul fxLayout="row" class="social list-inline">
-              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-              <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-            </ul>
-          </div>
-
-
-
-
-
-
-      </div>
-  </div>
+    </div>
 </footer>

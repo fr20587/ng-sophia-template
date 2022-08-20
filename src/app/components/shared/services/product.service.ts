@@ -14,7 +14,7 @@ const products = JSON.parse(localStorage.getItem("compareItem")) || [];
     providedIn: 'root'
 })
 export class ProductService {
-    public currency = 'CUP';
+    public currency = 'CUP ';
     public catalogMode = false;
 
     private _url = "assets/data/";

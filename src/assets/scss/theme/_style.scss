@@ -1009,23 +1009,95 @@ span {
     background-color: $footer-background;
 
     .footer-widget {
-        padding-right: 15px;
-        .social {
-            margin-top: 20px;
-            li {
-                width: 33px;
-                height: 33px;
-                border: 1px solid $grey4;
-                border-radius: 50%;
-                text-align: center;
-                margin-right: 5px;
-                a {
-                    i {
-                        color: $theme-main-dark;
+        // padding-right: 15px;
+
+        .about-widget {
+            .logo {
+                img {
+                    max-width: 240px;
+                }
+            }
+        }
+        .link {
+            a {
+                color: $font-color;
+            }
+        }
+        .link:hover {
+            a {
+                color: $theme-main;
+                -webkit-transition: color 0.6s cubic-bezier(.17,.67,.83,.67);
+                transition: color 0.6s cubic-bezier(.17,.67,.83,.67);
+            }
+        }
+
+        .links-widget {
+            .title {
+                margin-bottom: 10px;
+                h5 {
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+            }
+    
+            a {
+                text-decoration: none;
+                font-size: 15px;
+                line-height: 32px;
+                color: $font-color;
+            }
+
+            a:hover {
+                font-weight: 700;
+                color: $theme-main;
+                -webkit-transition: color 0.6s cubic-bezier(.17,.67,.83,.67);
+                transition: color 0.6s cubic-bezier(.17,.67,.83,.67);
+                -webkit-transition: font-weight 0.6s cubic-bezier(.17,.67,.83,.67);
+                transition: font-weight 0.6s cubic-bezier(.17,.67,.83,.67);
+            }
+        }
+
+        .subscribe-widget {
+            // margin-right: 10px;
+            padding-left: 5px;
+            .title {
+                margin-bottom: 10px;
+                h5 {
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+            }
+
+            input {
+                height: 45px;
+                background: $white;
+                font-size: 15px;
+                line-height: 45px;
+                border: 1px solid $white-dark;
+                border-radius: 4px;
+                padding: 0 65px 0 20px;
+                color: $grey;
+            }
+
+            .social {
+                margin-top: 20px;
+                li {
+                    width: 33px;
+                    height: 33px;
+                    border: 1px solid $grey4;
+                    border-radius: 50%;
+                    text-align: center;
+                    margin-right: 5px;
+                    a {
+                        i {
+                            vertical-align: middle;
+                            color: $theme-main-dark;
+                        }
                     }
                 }
             }
         }
+
         .ped-btn-footer {
             border: 1px solid $theme-main;
             color: $theme-main-dark !important;
@@ -1044,20 +1116,7 @@ span {
             border-radius: 3px;
             line-height: 45px;
         }
-        .title {
-            margin-bottom: 10px;
-            h5 {
-                font-size: 18px;
-                font-weight: 600;
-            }
-        }
 
-        a {
-            text-decoration: none;
-            font-size: 15px;
-            line-height: 32px;
-            color: $font-color;
-        }
 
         .newsletter-widget {
             position: relative;
@@ -1071,13 +1130,7 @@ span {
         ul {
             list-style-type: none;
         }
-        .about-widget {
-            .logo {
-                img {
-                    max-width: 240px;
-                }
-            }
-        }
+
         .tel-box {
             .icon {
                 i {
@@ -1095,24 +1148,14 @@ span {
                 p {
                     a {
                         line-height: 22px;
+                        color: $font-color;
                     }
                 }
             }
         }
     }
 
-    .subscribe-widget {
-        input {
-            height: 45px;
-            background: $white;
-            font-size: 15px;
-            line-height: 45px;
-            border: 1px solid $white-dark;
-            border-radius: 4px;
-            padding: 0 65px 0 20px;
-            color: $grey;
-        }
-    }
+
 }
 
 /***************************************
@@ -2953,6 +2996,9 @@ span {
                 img {
                     max-width: 240px;
                 }
+            }
+            .link:hover {
+                color: $theme-main;
             }
         }
         .tel-box {

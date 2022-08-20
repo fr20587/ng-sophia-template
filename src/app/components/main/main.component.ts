@@ -19,7 +19,7 @@ export class MainComponent implements OnInit {
     public currencies = ['CUP', 'MLC'];
     public currency: any;
     public flags = [
-        { name: 'Español', image: 'assets/images/flags/es.svg' },
+        { name: 'Español', image: 'assets/images/flags/es.png' },
         { name: 'Inglés', image: 'assets/images/flags/gb.svg' },
     ]
     public flag: any;
