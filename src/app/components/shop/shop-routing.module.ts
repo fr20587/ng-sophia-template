@@ -11,20 +11,21 @@ import { HomeFiveComponent } from './home-five/home-five.component';
 
 // Routes
 const routes: Routes = [
-  { path: 'one', component: HomeComponent },
-  { path: 'two', component: HomeTwoComponent },
-  { path: 'three', component: HomeThreeComponent },
-  { path: 'four', component: HomeFourComponent },
-  { path: 'five', component: HomeFiveComponent },
-  { path: 'products/:category', component: ProductLeftSidebarComponent },
-  { path: 'product/:id', component: ProductDetailsComponent }
+    { path: '', component: HomeFiveComponent },
+    { path: 'one', component: HomeComponent },
+    { path: 'two', component: HomeTwoComponent },
+    { path: 'three', component: HomeThreeComponent },
+    { path: 'four', component: HomeFourComponent },
+    { path: 'five', component: HomeFiveComponent },
+    { path: 'products/:category', component: ProductLeftSidebarComponent },
+    { path: 'product/:id', component: ProductDetailsComponent }
 
 
 ];
 
 
 @NgModule({
-  imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+    imports: [RouterModule.forChild(routes)],
+    exports: [RouterModule]
 })
 export class ShopRoutingModule { }
